@@ -43,7 +43,7 @@ attrs = {"name":package,
          "author_email":"imageries@mail.de",
          "package_dir":{"": "src"},
          "packages":find_packages(where="src") if find_packages else packages,
-         "license":"MIT",
+         "license": "GPL2",
          "description":"Python helper library.",
          "long_description":long_description,
          "keywords":"python maya utilities"}
