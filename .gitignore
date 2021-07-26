@@ -1,0 +1,8 @@
+*.pyc
+*.mb
+*.ma
+__pycache__
+.vscode
+build
+.DS_STORE
+.DS_*
