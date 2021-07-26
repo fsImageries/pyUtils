@@ -1,11 +1,11 @@
 from string import digits
 from time import time, sleep
 from collections import Iterable
+from . import static
 
 import os
 import sys
 import json
-import static
 import socket
 import traceback
 
