@@ -273,11 +273,15 @@ def join_recursive(p1, ps):
 
 
 class FunctionTimer(object):
+    def __init__(self, msg=""):
+        self.msg = msg
+
     def __enter__(self):
-        self.start_time = time()
+        self.start_time = time.perf_counter()
 
     def __exit__(self, *_):
-        print("My program took", time() - self.start_time, "to run")
+        print("{0} --- elapsed time: {1} s".format(self.msg,
+              time.perf_counter() - self.start_time))
 
 
 # ---------------------------- Scripts -------------------------------- #
